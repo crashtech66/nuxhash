@@ -1,5 +1,8 @@
 ![logo](https://raw.githubusercontent.com/YoRyan/nuxhash/master/nuxhash/gui/icons/nuxhash_128x128.png)
 
+
+Note: crashtech66's mods do not work, use of this client is not recommended at this time.
+
 nuxhash is a [NiceHash](https://nicehash.com) cryptocurrency mining client for
 Linux. nuxhash consists of a headless daemon and an optional wxPython-based GUI.
 It is currently in beta.
