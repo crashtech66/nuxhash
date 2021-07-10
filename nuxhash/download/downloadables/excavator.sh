@@ -8,10 +8,14 @@ verify)
         exit $?
         ;;
 download)
-        curl -L -O "https://github.com/nicehash/excavator/releases/download/v${VERSION}/excavator_${VERSION}_amd64.deb"
-        ar x "excavator_${VERSION}_amd64.deb" data.tar.xz
-        tar xf data.tar.xz --strip-components 4 ./opt/excavator/bin/excavator
-        rm -f "excavator_${VERSION}_amd64.deb" data.tar.xz
+     #   curl -L -O "https://github.com/nicehash/excavator/releases/download/v${VERSION}/excavator_${VERSION}_amd64.deb"
+         curl -L -O "https://github.com/nicehash/excavator/archive/refs/tags/v${VERSION}.tar.gz"
+     #  https://github.com/nicehash/excavator/archive/refs/tags/v1.7.1d.tar.gz
+     #  ar x "excavator_${VERSION}_amd64.deb" data.tar.xz
+     #  tar xf data.tar.xz --strip-components 4 ./opt/excavator/bin/excavator
+        tar xf v${VERSION}.tar.gz --strip-components 4 ./opt/excavator/bin/excavator
+     #  rm -f "excavator_${VERSION}_amd64.deb" data.tar.xz
+        rm -f "v${VERSION}.tar.gz"
         exit 0
         ;;
 esac
