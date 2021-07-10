@@ -1,8 +1,7 @@
 #!/bin/sh
 
-VERSION='1.5.14a'
-SHA256='e814107a5c1df119b4f7c40c36c53e8324688508da10543f2ad94c5368c43225'
-
+  VERSION='1.7.1d'
+  SHA256='2cf36f8dfa54bcbc4658e4205dd63db35cf0f1c228e07c8818269825a75699bc'
 case "$1" in
 verify)
         [ -f excavator ] && [ `sha256sum excavator | awk '{print $1}'` = "$SHA256" ]
