@@ -45,6 +45,7 @@
 #!/bin/sh
 
 # Revision 2:
+# It appears that version 1.5.14a was the last to offer a Linux binary. So none of thhis will work.
      
      VERSION='1.7.1d'
 SHA256='2cf36f8dfa54bcbc4658e4205dd63db35cf0f1c228e07c8818269825a75699bc'
